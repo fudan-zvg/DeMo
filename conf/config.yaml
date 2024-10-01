@@ -1,0 +1,40 @@
+defaults:
+  - datamodule: av2  # 'av2' for 'DeMo', 'av2_stream' for 'DeMo+RealMotion'
+  - model: model_forecast  # 'model_forecast' for 'DeMo', 'stream_model_forecast' for 'DeMo+RealMotion'
+# eg: For 'DeMo'
+# defaults:
+#   - datamodule: av2
+#   - model: model_forecast
+
+hydra:
+  run:
+    dir: outputs/${output}/${now:%Y%m%d-%H%M%S}
+
+seed: 2024
+monitor: val_minFDE6
+save_top_k: 10
+
+data_root:
+checkpoint:
+pretrained_weights:
+output: change_${datamodule.name}_${datamodule.phase}_${model.name}_${model.phase}
+
+# trainer
+num_workers: 4
+gpus: 8  # when test, only use 1 gpu; when train/val, use 8 gpus
+sync_bn: true
+batch_size: 16
+epochs: 60
+warmup_epochs: 10
+
+# optimizer
+lr: 0.003  
+weight_decay: 1e-2  
+gradient_clip_val: 5
+gradient_clip_algorithm: norm
+
+limit_train_batches:
+limit_val_batches:
+limit_test_batches:
+log_model: all
+test: false  # false for val, true for test
