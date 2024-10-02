@@ -89,7 +89,7 @@ python eval.py gpus=1 test=true
 ```
 
 ## ⭐ Results and checkpoints
-- We provide two versions of the models: `DeMo` for [DeMo](https://github.com/fudan-zvg/DeMo) itself, and `DeMo+RealMotion`, which integrates [DeMo](https://github.com/fudan-zvg/DeMo) with our other work, [RealMotion](). You can select which model to use by adjusting the first 3 rows in [config.yaml](https://github.com/fudan-zvg/DeMo/blob/main/conf/config.yaml).
+- We provide two versions of the models: `DeMo` for [DeMo](https://github.com/fudan-zvg/DeMo) itself, and `DeMo+RealMotion`, which integrates [DeMo](https://github.com/fudan-zvg/DeMo) with our other work, [RealMotion](https://github.com/fudan-zvg/RealMotion). You can select which model to use by adjusting the first 3 rows in [config.yaml](https://github.com/fudan-zvg/DeMo/blob/main/conf/config.yaml).
 
 | Models | minADE1 | minFDE1 | minADE6 | minFDE6 |
 | :- | :-: | :-: | :-: | :-: |
@@ -115,3 +115,4 @@ python eval.py gpus=1 test=true
  - [VideoMamba](https://github.com/OpenGVLab/VideoMamba)
  - [Forecast-MAE](https://github.com/jchengai/forecast-mae)
  - [StreamPETR](https://github.com/exiawsh/StreamPETR)
+ - [RealMotion (Ours)](https://github.com/fudan-zvg/RealMotion)
