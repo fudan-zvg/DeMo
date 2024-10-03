@@ -1,4 +1,4 @@
-# [NeurIPS 2024] DeMo: Decoupling Motion Forecasting into Directional Intentions and Dynamic States
+# DeMo: Decoupling Motion Forecasting into Directional Intentions and Dynamic States
 ### [[Paper]](https://arxiv.org/abs/XXXX)
 
 > [**DeMo: Decoupling Motion Forecasting into Directional Intentions and Dynamic States**](https://arxiv.org/abs/XXXX),            
