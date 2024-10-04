@@ -106,7 +106,7 @@ python eval.py gpus=1 test=true
 ```bibtex
 @inproceedings{zhang2024demo,
  title={DeMo: Decoupling Motion Forecasting into Directional Intentions and Dynamic States},
-  author={Zhang, Bozhou and Song, Nan and Zhang, Li},
+ author={Zhang, Bozhou and Song, Nan and Zhang, Li},
  booktitle={The Thirty-eighth Annual Conference on Neural Information Processing Systems (NeurIPS)},
  year={2024},
 }
