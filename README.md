@@ -1,7 +1,7 @@
 # DeMo: Decoupling Motion Forecasting into Directional Intentions and Dynamic States
-### [[Paper]](https://arxiv.org/abs/XXXX)
+### [[Paper]](https://arxiv.org/abs/2410.05982)
 
-> [**DeMo: Decoupling Motion Forecasting into Directional Intentions and Dynamic States**](https://arxiv.org/abs/XXXX)            
+> [**DeMo: Decoupling Motion Forecasting into Directional Intentions and Dynamic States**](https://arxiv.org/abs/2410.05982)            
 > [Bozhou Zhang](https://zbozhou.github.io/), Nan Song, [Li Zhang](https://lzrobots.github.io)  
 > **School of Data Science, Fudan University**  
 > **NeurIPS 2024**
@@ -90,7 +90,7 @@ python eval.py gpus=1 test=true
 ```
 
 ## ⭐ Results and checkpoints
-- We provide two versions of the models: `DeMo` for [DeMo](https://github.com/fudan-zvg/DeMo) itself, and `DeMo+RealMotion`, which integrates [DeMo](https://github.com/fudan-zvg/DeMo) with our other work, [RealMotion](https://github.com/fudan-zvg/RealMotion). You can select which model to use by adjusting the first 3 rows in [config.yaml](https://github.com/fudan-zvg/DeMo/blob/main/conf/config.yaml).
+- We provide two versions of the models: `DeMo` for [DeMo](https://arxiv.org/abs/2410.05982) itself, and `DeMo+RealMotion`, which integrates [DeMo](https://arxiv.org/abs/2410.05982) with our other work, [RealMotion](https://arxiv.org/abs/2410.06007). You can select which model to use by adjusting the first 3 rows in [config.yaml](https://github.com/fudan-zvg/DeMo/blob/main/conf/config.yaml).
 
 | Models | minADE1 | minFDE1 | minADE6 | minFDE6 |
 | :- | :-: | :-: | :-: | :-: |
