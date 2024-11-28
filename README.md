@@ -2,7 +2,7 @@
 ### [[Paper]](https://arxiv.org/abs/2410.05982)
 
 > [**DeMo: Decoupling Motion Forecasting into Directional Intentions and Dynamic States**](https://arxiv.org/abs/2410.05982)            
-> [Bozhou Zhang](https://zbozhou.github.io/), Nan Song, [Li Zhang](https://lzrobots.github.io)  
+> [Bozhou Zhang](https://zbozhou.github.io/), [Nan Song](https://scholar.google.com/citations?hl=zh-CN&user=wLZVtjEAAAAJ), [Li Zhang](https://lzrobots.github.io)  
 > **School of Data Science, Fudan University**  
 > **NeurIPS 2024**
 
