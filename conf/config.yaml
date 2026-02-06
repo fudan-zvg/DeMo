@@ -1,6 +1,6 @@
 defaults:
-  - datamodule: av2  # 'av2' for 'DeMo', 'av2_stream' for 'DeMo+RealMotion'
-  - model: model_forecast  # 'model_forecast' for 'DeMo', 'stream_model_forecast' for 'DeMo+RealMotion'
+  - datamodule: av2_stream  # 'av2' for 'DeMo', 'av2_stream' for 'DeMo+RealMotion'
+  - model: stream_model_forecast  # 'model_forecast' for 'DeMo', 'stream_model_forecast' for 'DeMo+RealMotion'
 # eg: For 'DeMo'
 # defaults:
 #   - datamodule: av2

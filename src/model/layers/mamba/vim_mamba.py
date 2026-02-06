@@ -111,7 +111,7 @@ def create_block(
     if ssm_cfg is None:
         ssm_cfg = {}
     factory_kwargs = {"device": device, "dtype": dtype}
-    mixer_cls = partial(Mamba, layer_idx=layer_idx, bimamba=bimamba, **ssm_cfg, **factory_kwargs)
+    mixer_cls = partial(Mamba, layer_idx=layer_idx, **ssm_cfg, **factory_kwargs)
     norm_cls = partial(
         nn.LayerNorm if not rms_norm else RMSNorm, eps=norm_epsilon, **factory_kwargs
     )

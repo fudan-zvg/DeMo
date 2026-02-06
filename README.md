@@ -27,29 +27,24 @@ Accurate motion forecasting for traffic agents is crucial for ensuring the safet
 ```
 conda create -n DeMo python=3.10
 conda activate DeMo
-```
 
-### Install dependency packpages
-```
+# Install dependency packpages
 pip install torch==2.1.1 torchvision==0.16.1 torchaudio==2.1.1 --index-url https://download.pytorch.org/whl/cu118
 pip install -r ./requirements.txt
 pip install av2==0.2.1
-```
 
-### Install Mamba
-- We follow the settings outlined in [VideoMamba](https://github.com/OpenGVLab/VideoMamba).
-```
-git clone git@github.com:OpenGVLab/VideoMamba.git
-cd VideoMamba
-pip install -e causal-conv1d
-pip install -e mamba
-```
-
-### Some packages may be useful
-```
+# Some packages may be useful
 pip install tensorboard
 pip install torch-scatter -f https://data.pyg.org/whl/torch-2.1.1+cu118.html
 pip install protobuf==3.20.3
+pip install numpy==1.26.3
+pip install transformers==4.30
+
+# Install Mamba, we follow the settings outlined in [VideoMamba](https://github.com/OpenGVLab/VideoMamba).
+cd third_party/causal-conv1d
+pip install . --no-build-isolation
+cd third_party/mamba
+pip install . --no-build-isolation
 ```
 
 ## 🕹️ Prepare the data
@@ -95,14 +90,6 @@ python eval.py
 # Test for submission
 python eval.py gpus=1 test=true
 ```
-
-## ⭐ Results and checkpoints
-- We provide two versions of the models: `DeMo` for [DeMo](https://arxiv.org/abs/2410.05982) itself, and `DeMo+RealMotion`, which integrates [DeMo](https://arxiv.org/abs/2410.05982) with our other work, [RealMotion](https://arxiv.org/abs/2410.06007). You can select which model to use by adjusting the first 3 rows in [config.yaml](https://github.com/fudan-zvg/DeMo/blob/main/conf/config.yaml).
-
-| Models | minADE1 | minFDE1 | minADE6 | minFDE6 |
-| :- | :-: | :-: | :-: | :-: |
-| [DeMo](https://drive.google.com/file/d/1xqj8T5M2cczIZU26poseAQri6VE6v9a0/view?usp=drive_link)   |  1.578  |  3.961  |  0.645  |  1.247  |
-| [DeMo+RealMotion](https://drive.google.com/file/d/131pcHXP-vLcyypZWn6Es7n6TT8bxs4rN/view?usp=drive_link) |  1.478  |  3.728  |  0.607  |  1.186  |
 
 ### Qualitative Results
 <div align="center">
