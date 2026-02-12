@@ -89,6 +89,9 @@ python eval.py
 
 # Test for submission
 python eval.py gpus=1 test=true
+
+# Visualization
+python visual.py
 ```
 
 ### Qualitative Results
